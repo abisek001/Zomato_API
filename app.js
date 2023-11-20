@@ -38,13 +38,11 @@ app.use(passport.session());
 app.use('/',router);
 app.use('/api/payment', paymentRoutes)
 app.use('/auth', authRote);
-//Atles Username: abisek501
-//Atles Password: 7TVG2K0IxHG0wTsE
 
 
 const dbUrl = 'mongodb://127.0.0.1:27017/restaurant';
 
-const atlesdbUrl = "mongodb+srv://abisek501:7TVG2K0IxHG0wTsE@cluster0.5rzfnfi.mongodb.net/Zomato_Clone?retryWrites=true&w=majority";
+const atlesdbUrl = process.env.atlesdbUrl
 mongoose.connect(atlesdbUrl,{useNewUrlParser: true, useUnifiedTopology: true})
 .then( res => {
    app.listen(port, hostname, () => {
