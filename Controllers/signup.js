@@ -1,4 +1,4 @@
-const user = require('../Database/signup');
+const user = require('../Models/signup');
 //Create an Account
 exports.signup = (req, res) => {
     const { email, password, name } = req.body;

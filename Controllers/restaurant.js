@@ -1,4 +1,4 @@
-const restaurant_List = require('../Database/restaurant');
+const restaurant_List = require('../Models/restaurant');
 // Get the restaurant by location:
 exports.getRestaurant = (req, res) => {
     restaurant_List.find()

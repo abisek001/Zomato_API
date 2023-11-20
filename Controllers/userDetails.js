@@ -1,4 +1,4 @@
-const userDetails = require('../Database/userDetails');
+const userDetails = require('../Models/userDetails');
 
 exports.SaveUserDetails = (req, res) => {
     const { Name, MobileNumber, Address } = req.body;

@@ -1,5 +1,5 @@
 
-const restaurantMenu = require('../Database/menu');
+const restaurantMenu = require('../Models/menu');
 
 // Get the restaurant by menu ID:
 exports.getRestaurantsByMenuid = (req, res) => {

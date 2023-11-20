@@ -1,4 +1,4 @@
-const mealtype = require('../Database/mealtype');
+const mealtype = require('../Models/mealtype');
 
 exports.getmealtype = (req, res) => {
     mealtype.find({},{}) /*name:1*/

@@ -1,4 +1,4 @@
-const cityLocation = require('../Database/locations');
+const cityLocation = require('../Models/locations');
 
 exports.getCityList = (req, res) => {
     cityLocation.find({},{})/*name:1*/
