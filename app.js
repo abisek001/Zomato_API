@@ -25,7 +25,7 @@ app.use((req, res, next) => {
  });
 
 const corsOptions = {
-   origin: 'http://localhost:3000',  // Replace with the actual origin of your frontend
+   origin: ['http://localhost:3000', "https://mern-app-zomato.onrender.com"],
    credentials: true,
    optionSuccessStatus:200
 }
