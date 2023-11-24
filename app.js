@@ -42,7 +42,7 @@ app.use('/auth', authRote);
 
 const dbUrl = 'mongodb://127.0.0.1:27017/restaurant';
 
-const atlesdbUrl = process.env.atlesdbUrl
+const atlesdbUrl = "mongodb+srv://abisek501:7TVG2K0IxHG0wTsE@cluster0.5rzfnfi.mongodb.net/Zomato_Clone?retryWrites=true&w=majority";
 mongoose.connect(atlesdbUrl,{useNewUrlParser: true, useUnifiedTopology: true})
 .then( res => {
    app.listen(port, hostname, () => {
